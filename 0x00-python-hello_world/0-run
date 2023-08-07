@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Check if $PYFILE is set
+if [ -z "$PYFILE" ]; then
+  echo "Error: \$PYFILE is not set"
+  exit 1
+fi 
+
+# Run the Python script
+python "$PYFILE"
+
+# Check the exit code and handle errors
+if [ $? -ne 0 ]; then
+  echo "Error running $PYFILE" 
+  exit 1
+fi
