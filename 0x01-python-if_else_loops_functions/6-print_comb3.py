@@ -1,4 +1,4 @@
-!/usr/bin/python3
+#!/usr/bin/python3
 # Author - Godswill Kalu
 
 for digit1 in range(0, 10):
